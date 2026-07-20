@@ -12,7 +12,7 @@
 
 ## Context
 
-This is a short exercise written for a university **Operating Systems** course, not a full-blown project — but the underlying idea (page-aligned overwriting via `mmap()` instead of `seek()` + `write()`) is a genuinely useful technique, so it's included here as a portfolio piece. Written by hand, no AI-assisted code.
+This is a short exercise written for a university **Operating Systems** course, not a full-blown project — but the underlying idea (page-aligned overwriting via `mmap()` instead of `seek()` + `write()`) is a genuinely useful technique.
 
 ---
 
