@@ -69,9 +69,3 @@ Richiede un ambiente POSIX (`mmap`, `msync`, `unlink` — Linux/macOS/BSD). Non 
 - **Nessuna sovrascrittura multi-passata.** Un singolo passaggio di azzeramento è sufficiente contro i tool di undelete più comuni, ma non regge il confronto con un recupero forense su alcuni tipi di storage — questo è stato scritto come esercizio su `mmap()`, non come tool di cancellazione sicura production-ready (per quello vedi `shred(1)`).
 - **Limite SSD/flash.** Il wear-leveling sugli SSD fa sì che il blocco fisico che contiene effettivamente i vecchi dati potrebbe non essere quello che il sistema operativo crede di sovrascrivere — nessun tool in userspace può garantire una cancellazione completa su storage flash senza supporto TRIM/secure-erase da parte del disco stesso.
 - **Nessuna gestione di directory o symlink** — opera su un singolo percorso di file regolare.
-
----
-
-## Licenza
-
-MIT — vedi [LICENSE](LICENSE).
