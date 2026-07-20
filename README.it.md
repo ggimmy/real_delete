@@ -12,7 +12,7 @@
 
 ## Contesto
 
-Questo è un piccolo esercizio scritto per il corso universitario di **Sistemi Operativi**, non un progetto vero e proprio — ma l'idea alla base (sovrascrittura allineata alle pagine tramite `mmap()` invece di `seek()` + `write()`) è una tecnica genuinamente utile, quindi l'ho inclusa qui come pezzo di portfolio. Scritto interamente a mano, nessun codice generato da IA.
+Questo è un piccolo esercizio scritto per il corso universitario di **Sistemi Operativi**, non un progetto vero e proprio — ma l'idea alla base (sovrascrittura allineata alle pagine tramite `mmap()` invece di `seek()` + `write()`) è una tecnica genuinamente utile.
 
 ---
 
