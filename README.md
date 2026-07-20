@@ -69,9 +69,3 @@ Requires a POSIX environment (`mmap`, `msync`, `unlink` — Linux/macOS/BSD). Wo
 - **No multiple-pass overwrite.** A single zero-fill pass is enough to defeat casual undelete tools, but not a match for forensic recovery on some storage media — this was written as an exercise in `mmap()`, not as a production-grade secure-erase tool (see `shred(1)` for that).
 - **SSD/flash caveat.** Wear-leveling on SSDs means the physical block actually holding the old data may not be the one the OS thinks it's overwriting — no userspace tool can fully guarantee erasure on flash without TRIM/secure-erase support from the drive itself.
 - **No directory or symlink handling** — it operates on a single regular file path.
-
----
-
-## License
-
-MIT — see [LICENSE](LICENSE).
